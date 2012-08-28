@@ -1,0 +1,61 @@
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+  <title>LOVE-THYSELFIE</title>
+</head>
+
+<body>
+  <!-- tran -->
+  <div class="side" data-okimage="RENDER-SELFIES.jpg">
+    <p> RENDER WANTS YOUR SELFIES</p>
+
+    <p>LOVE THYSELFIE is a weekly RENDER installment that seeks to reappropriate and reclaim the act and intent behind taking personal webcam photos. The shame-like stigma surrounding the ubiquitous webcam ‘selfie’— a concept unique to and mastered by the millennial generation—is a reflection of how the phenomena of contemporary youth culture are both overexposed and over-sensationalized.</p>
+
+    <p>We live in an era with unprecedented forms of identity-making: kids are growing up without being able to imagine a world without computers or the Internet. A generation of digital natives, today’s youth are armed with an intense and hyperaccelerated desire to shape cyber identities and forge socially networked trajectories in an increasingly digitized world.</p>
+
+    <p>We often wonder: are we truly as narcissistic as the media claims? Or are we simply the first generation to be granted a guaranteed and massive public sphere to broadcast ourselves?</p>
+
+    <p>This “narcissism epidemic” is neither a novel concept nor a cultivated detriment, but only a manifestation of the natural human instinct to seek approval and validation from one’s peers.</p>
+
+    <p>In an effort to provide some necessary context to the claim that millennials are inherently narcissistic, RENDER aims to provide you with both a platform and an outlet to express yourself freely without shame or judgement.</p>
+
+    <p>Through LOVE THYSELFIE, we hope to take the idea of hyper-narcissism and radically turn it on its head. It’s not a celebration of self-obsession, but rather an acknowledgement and exploration of narcissism as an arbitrary yet universal personality trait that has been inaccurately and stigmatically designated to our kind.</p>
+
+    <p>Post your webcam/photobooth/pixelated cell phone/canon powershot SELFIES HERE </p>
+
+    <p>(public sharing of selfies is encouraged for maximum destigmafication potential, but if you'd like to submit a pic and keep it private, u can always email it to rend3rzine@gmail.com :)</p>
+
+
+    <br/>
+    --------
+    <br/>
+    -------
+    <br/>
+    -------
+    <br/>
+  </div>
+  <div class="content">
+    <textarea data-okimage="RENDER-SELFIES.jpg" placeholder="first, describe yr internet narcissism here" cols="30" rows="5"></textarea>
+           <h4 class="second">then, drag your pic anywhere on this page</h4>  
+    <div id="up_pix">
+ 
+
+      {{> photos}} 
+    </div>
+
+  </div>
+
+
+
+
+
+  </body>
+
+  <template name="photos">
+  {{#each all_photos}}
+  <div class="pic">
+    <img src="{{photourl}}" />
+    <p>{{text}}</p>
+  </div>        
+  {{/each}}
+  </template>
